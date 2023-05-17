@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\Cats\Index.cshtml" />
+    <Content Remove="Pages\Cats\Create.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,15 +21,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Pages\Cats\Index.cshtml" />
+    <UpToDateCheckInput Remove="Pages\Cats\Create.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="Pages\Cats\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Cats\Create.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Pages\Cats\Index.cshtml" />
+    <None Include="Pages\Cats\Create.cshtml" />
   </ItemGroup>
 
 </Project>

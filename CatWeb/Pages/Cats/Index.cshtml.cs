@@ -15,7 +15,7 @@ namespace CatWeb.Pages.Cats
         }
         public void OnGet()
         {
-            Cats = _db.Cat;
+            Cats = _db.Cat ;
         }
     }
 }

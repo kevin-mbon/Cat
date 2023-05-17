@@ -10,6 +10,6 @@ namespace CatWeb.Data
             
         }
 
-        public DbSet<Cat> Cat { get; set; }
+       public DbSet<Cat> Cat { get; set; }
     }
 }
