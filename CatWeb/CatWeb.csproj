@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <Content Remove="Pages\Cats\Create.cshtml" />
+    <Content Remove="Pages\Cats\Delete.cshtml" />
+    <Content Remove="Pages\Cats\Edit.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,10 +28,17 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Pages\Cats\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Cats\Delete.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Pages\Cats\Delete.cshtml" />
+    <None Include="Pages\Cats\Edit.cshtml" />
     <None Include="Pages\Cats\Create.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Cats\Delete.cshtml" />
   </ItemGroup>
 
 </Project>

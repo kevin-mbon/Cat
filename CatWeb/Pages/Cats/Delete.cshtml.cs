@@ -6,28 +6,33 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace CatWeb.Pages.Cats
 {
     [BindProperties]
-    public class CreateModel : PageModel
+    public class DeleteModel : PageModel
     {
         public readonly CatDbContext _db;
-        
+
         public Cat Cat { get; set; }
-       
-        public CreateModel(CatDbContext db)
+        public DeleteModel(CatDbContext db)
         {
             _db = db;
         }
-        public void OnGet()
+        public void OnGet(int id)   
         {
+           Cat = _db.Cat.Find(id);
         }
+
         public async Task<IActionResult> OnPost()
         {
-            if (ModelState.IsValid) {
-                await _db.Cat.AddAsync(Cat);
+            var catFromDb = _db.Cat.Find(Cat.Id);
+           if(catFromDb != null)
+            {
+                _db.Cat.Remove(catFromDb);
                 await _db.SaveChangesAsync();
-                TempData["success"] = "Cat Added successfully";
+                TempData["success"] = "Cat deleted seccessfully";
                 return RedirectToPage("Index");
+
             }
             return Page();
         }
+
     }
 }

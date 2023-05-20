@@ -1,11 +1,12 @@
 ﻿@page
-@model CatWeb.Pages.Cats.CreateModel
+@model CatWeb.Pages.Cats.EditModel
 
 <form method="post">
+    <input hidden asp-for="Cat.Id" />
     <div class="border p3 mt-4">
         <div class="row pb-2">
             <h2 class="text-primary pl-3">
-               Add Cat</h2>
+               Edit Cat</h2>
         </div>
         <div asp-validation-summary="All"></div>
         <div class="mb-3" >
@@ -21,9 +22,9 @@
             <span asp-validation-for="Cat.Color" class="text-danger"></span>
         </div>
         <button type="submit" class="btn btn-primary" style="width: 150px;" >
-            Add
+            Update
         </button>
-        <a asp-page ="Index" class="btn btn-secondary" style="width: 150px;">Back to list</a>
+        <a asp-page="Index" class="btn btn-secondary" style="width: 150px;">Back to list</a>
     </div>
 </form>
 
