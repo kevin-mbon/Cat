@@ -1,13 +1,6 @@
 ﻿@page
 @model CatWeb.Pages.Cats.IndexModel
-@if(TempData["success"] != null)
-{
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script type="text/javascript">
-        toastr.success('@TempData["success"]');
-        </script>
-}
+
 <div class="container p-3">
     <div class="row pt-4">
         <div class="col-6 text-end">
@@ -38,11 +31,11 @@
                     <td width="50%"> @obj.Color </td>
                     <td >
                         <div class="w-75 btn-group" role="group">
-                            <a asp-page="Edit" asp-route-id="@obj.Id" class="btn-primary mx-2">
-                                <i class="bi bi-pencil-square"></i>&nbsp;
+                            <a asp-page="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx -2">
+                                <i class="bi bi-pencil-square"></i> &nbsp;
                             </a>
-                            <a asp-page="Delete" asp-route-id="@obj.Id" class="btn-danger mx-2">
-                                <i class="bi bi-trash3"></i>&nbsp;
+                            <a asp-page="Delete" asp-route-id="@obj.Id" class="btn btn-danger mx-2">
+                                <i class="bi bi-trash3"></i> &nbsp;
                             </a>
                         </div>
                     </td>
