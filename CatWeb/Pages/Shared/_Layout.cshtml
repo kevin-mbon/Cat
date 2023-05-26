@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - CatWeb</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @*<link rel="stylesheet" href="~/css/Fonts.css" />*@
     @*<link rel="stylesheet" href="~/css/Test.css" />*@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CatWeb.styles.css" asp-append-version="true" />
@@ -13,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light @*border-bottom*@ box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">CatWeb</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -40,9 +41,9 @@
         </main>
     </div>
 
-    <footer class="@*border-top*@ footer text-muted">
+    <footer class="@*border-top*@ footer text-muted fixed-bottom bg-dark my-4">
         <div class="container">
-            &copy; 2023 - CatWeb - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy;@DateTime.Now.Year  - Alright resevered - 
         </div>
     </footer>
     

@@ -41,4 +41,12 @@
     <UpToDateCheckInput Remove="Pages\Cats\Delete.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="Pages\Cats\cat.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\i\" />
+  </ItemGroup>
+
 </Project>

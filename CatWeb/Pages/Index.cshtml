@@ -1,15 +1,28 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
+<head>
+    <style>
+        body {
+            background-image: url("https://fastly.picsum.photos/id/143/3600/2385.jpg?hmac=gSMmnYrmuP5BJ47kmErfYdYu1L1GLePM1SNm-D2lqiA");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 
+</head>
+<br />
+<br />
+<br />
+<br />
 
 <div class="text-center">
-   
-   
-
-    <div class="container mt-lg-5">
-        <h1 class="display-4 text-light">Cat Web</h1>
+    <div class="container">
+        <p class="display-4">Graceful feline whispers in the night, adorned with elegance and celestial light.</p>
+        <a class="nav-link text-dark" asp-area="" asp-page="Cats/Index">
+            <button type="button" class="btn btn-primary">Learn More</button>
+        </a>
     </div>
 </div>

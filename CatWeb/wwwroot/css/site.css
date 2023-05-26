@@ -16,6 +16,24 @@ html {
 body {
   margin-bottom: 60px;
 }
-.navbar-brand a{
+/*.navbar-brand a {
     color: black;
+    font-family: 'Roboto', sans-serif;*/
+    
+/*}*/
+/*.nav-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.container{
+    max-width: 100%;
+    padding: 0 0 0 0;
+}
+.background {
+    max-width: 100%;
+    padding: 0 0 0 0;
+}*/
+.display-4 {
+   font-weight:700;
+   color: white;
 }
